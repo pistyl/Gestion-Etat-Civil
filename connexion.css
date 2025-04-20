@@ -1,0 +1,78 @@
+/* Styles généraux pour la page */
+div[data-role="page"] {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre du formulaire */
+div[data-role="page"] h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styles pour les champs de formulaire */
+div[data-role="page"] input[type="email"],
+div[data-role="page"] input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Pour inclure le padding dans la largeur */
+}
+
+div[data-role="page"] input[type="email"]:focus,
+div[data-role="page"] input[type="password"]:focus {
+  border-color: #333;
+  outline: none;
+}
+
+/* Style pour le bouton de soumission */
+div[data-role="page"] input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+div[data-role="page"] input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Style pour les labels */
+div[data-role="page"] label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style pour les messages d'erreur (optionnel) */
+div[data-role="page"] .error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
